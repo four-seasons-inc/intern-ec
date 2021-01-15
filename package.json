@@ -8,9 +8,11 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@types/shopify-buy": "^2.10.5",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "shopify-buy": "^2.11.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
