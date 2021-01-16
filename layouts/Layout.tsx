@@ -13,6 +13,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
     </Head>
     <header>
       <nav>
@@ -24,10 +25,9 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           <a>About</a>
         </Link>{' '}
         |{' '}
-        <Link href="/users">
-          <a>Users List</a>
-        </Link>{' '}
-        | <a href="/api/users">Users API</a>
+        <Link href="/products">
+          <a>Products</a>
+        </Link>
       </nav>
     </header>
     {children}
