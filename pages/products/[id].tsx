@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
-import { Product } from "shopify-buy";
+import { useEffect, useState } from "react";
+import { Cart, Product } from "shopify-buy";
 import Layout from "../../layouts/Layout";
 import { client } from "../../lib/shopifyClient"
 
@@ -11,9 +12,21 @@ type DetailProps = {
 
 const DetailPage = (props: DetailProps) => {
   const { product, errors } = props;
+  const [checkoutLink, setCheckoutLink] = useState("");
 
   if (errors) { return <p>Error: {props.errors}</p> }
   if (!product) { return <p>Error: Product not found</p> }
+
+  useEffect(() => {
+    client.checkout.create().then((checkout: Cart) => {
+      const variantsId = product.variants[0].id;
+      client.checkout.addLineItems(checkout.id, [{ variantId: variantsId, quantity: 1 }])
+        .then((checkout) => {
+          console.log(checkout.lineItems);
+          setCheckoutLink(checkout.webUrl);
+        });
+    });
+  }, []);
 
   return (
     <Layout title={product.title}>
@@ -26,6 +39,9 @@ const DetailPage = (props: DetailProps) => {
         <p>{product.title}</p>
         <img src={product.images[0].src} height={200} />
       </div>
+      <Link href={checkoutLink}>
+        <button>購入する</button>
+      </Link>
     </Layout>
   )
 }

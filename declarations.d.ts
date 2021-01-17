@@ -4,3 +4,9 @@ namespace NodeJS {
     readonly STORE_FRONT_ACCESS_TOKEN: string;
   }
 }
+
+namespace ShopifyBuy {
+  interface Cart {
+    readonly webUrl: string;
+  }
+}
