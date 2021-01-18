@@ -22,7 +22,6 @@ const DetailPage = (props: DetailProps) => {
       const variantsId = product.variants[0].id;
       client.checkout.addLineItems(checkout.id, [{ variantId: variantsId, quantity: 1 }])
         .then((checkout) => {
-          console.log(checkout.lineItems);
           setCheckoutLink(checkout.webUrl);
         });
     });
