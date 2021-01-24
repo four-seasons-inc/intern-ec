@@ -1,14 +1,21 @@
-# TypeScript Next.js example
+# Next.js + TypeScript + Tailwindcss example e-commerce site
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
 
-## Deploy your own
+And Connecting Shopify by Storefront API.
 
-Deploy the example using [Vercel](https://vercel.com):
+ - [Next.js](https://nextjs.org/)
+ - [TypeScript](https://www.typescriptlang.org/)
+ - [Tailwindcss](https://tailwindcss.com/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+The following knowledge is used as a reference.
 
-## Create and Setting next.config.js
+<https://qiita.com/nobux42/items/c038fdd5c63334a171c3>  
+<https://github.com/nobux42/next-shopify-example>
+
+## How to use it?
+
+### Create and Setting next.config.js
 
 ```js
 module.exports = {
@@ -19,8 +26,6 @@ module.exports = {
 };
 
 ```
-
-## How to use it?
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
@@ -51,3 +56,9 @@ When we run `next dev` the next time, Next.js will start looking for any `.ts` o
 Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
 
 A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+
+## Deploy your own
+
+Deploy the example using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
