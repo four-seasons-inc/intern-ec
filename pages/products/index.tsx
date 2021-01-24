@@ -28,7 +28,7 @@ const IndexPage: React.FC<IndexProps> = ({ products }) => {
                   <img src={product.images[0].src}
                     className="w-full object-cover object-center" />
                 </div>
-                <div className="prod-info grid gap-10">
+                <div className="prod-info grid gap-10 mt-4">
                   <div className="flex flex-col md:flex-row justify-between items-center text-gray-900">
                     <p className="font-bold text-xl">{product.variants[0].price}円</p>
                     <Link href="/products/[id]" as={`/products/${product.id}`}>
