@@ -10,7 +10,7 @@ type IndexProps = {
 
 const IndexPage: React.FC<IndexProps> = ({ products }) => {
   return (
-    <Layout title="Top">
+    <Layout title="Products | Next.js + TypeScript Example">
       <h1>Hello Next.js 👋</h1>
 
       <div className="flex flex-wrap">
