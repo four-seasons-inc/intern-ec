@@ -1,16 +1,7 @@
-import Link from 'next/link'
 import Layout from '../layouts/Layout'
 
 const Home = () => (
   <Layout title="Product | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>This is the Sample EC site</p>
-    <p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </p>
-
     <div className="container mx-auto px-6">
       <div className="h-64 rounded-md overflow-hidden bg-cover bg-center" style={{
         backgroundImage: "url('https://images.unsplash.com/photo-1577655197620-704858b270ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=144')"
