@@ -55,9 +55,6 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
             <Link href="/products">
               <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Products</a>
             </Link>
-            <Link href="/categories">
-              <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Categories</a>
-            </Link>
             <Link href="/contact">
               <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Contact</a>
             </Link>
