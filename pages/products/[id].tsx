@@ -28,7 +28,7 @@ const DetailPage = (props: DetailProps) => {
   }, []);
 
   return (
-    <Layout title={product.title}>
+    <Layout title={`${product.title} | Sample e-commerce`}>
       <div>
         <Link href="/products">
           <a href="/products">Back to Product Lists</a>
