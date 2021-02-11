@@ -1,45 +1,38 @@
 import Layout from '../layouts/Layout'
+import HeroCard from "../components/Molecules/HeroCard"
 import ItemCard from "../components/Molecules/ItemCard"
 
-import Button from "../components/Atoms/Button/Button"
 
 const Home = () => (
   <Layout title="Home | Sample e-commerce">
     <div className="container mx-auto px-6">
-      <div className="h-64 rounded-md overflow-hidden bg-cover bg-center" style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1577655197620-704858b270ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=144')"
-      }}>
-        <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
-          <div className="px-10 max-w-xl">
-            <h2 className="text-2xl text-white font-semibold">Sport Shoes</h2>
-            <p className="mt-2 text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
-            <Button type="Primary" text="Shop now" isArrowIcon={true} />
-          </div>
-        </div>
-      </div>
+
+      <HeroCard
+        width="full"
+        backgroundImageUrl="https://images.unsplash.com/photo-1577655197620-704858b270ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=144" title="Sport Shoes"
+        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur."
+        ButtonType='Primary'
+        ButtonText="Shop Now"
+        ButtonIsArrowIcon={true}
+      />
+
       <div className="md:flex mt-8 md:-mx-4">
-        <div className="w-full h-64 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:w-1/2" style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')"
-        }}>
-          <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
-            <div className="px-10 max-w-xl">
-              <h2 className="text-2xl text-white font-semibold">Back Pack</h2>
-              <p className="mt-2 text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
-              <Button type="Secondary" text="Shop now" isArrowIcon={true} />
-            </div>
-          </div>
-        </div>
-        <div className="w-full h-64 mt-8 md:mx-4 rounded-md overflow-hidden bg-cover bg-center md:mt-0 md:w-1/2" style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')"
-        }}>
-          <div className="bg-gray-900 bg-opacity-50 flex items-center h-full">
-            <div className="px-10 max-w-xl">
-              <h2 className="text-2xl text-white font-semibold">Games</h2>
-              <p className="mt-2 text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur.</p>
-              <Button type="Secondary" text="Shop now" isArrowIcon={true} />
-            </div>
-          </div>
-        </div>
+        <HeroCard
+          width="half"
+          backgroundImageUrl="https://images.unsplash.com/photo-1547949003-9792a18a2601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" title="Back Pack"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur."
+          ButtonType='Secondary'
+          ButtonText="Shop Now"
+          ButtonIsArrowIcon={true}
+        />
+        <HeroCard
+          width="half"
+          backgroundImageUrl="https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" title="Games"
+          description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore facere provident molestias ipsam sint voluptatum pariatur."
+          ButtonType='Secondary'
+          ButtonText="Shop Now"
+          ButtonIsArrowIcon={true}
+        />
       </div>
 
       <div className="mt-16">
