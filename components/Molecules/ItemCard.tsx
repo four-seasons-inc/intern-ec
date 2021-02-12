@@ -1,4 +1,4 @@
-import AddCart from "../Atoms/Button/AddCart"
+import AddCartButton from "../Atoms/Button/AddCartButton"
 
 type Props = {
   backgroundImageUrl: string,
@@ -11,7 +11,7 @@ const ItemCard = ({ backgroundImageUrl, ItemName, ItemPrice }: Props) => (
     <div className="flex items-end justify-end h-56 w-full bg-cover" style={{
       backgroundImage: `url(${backgroundImageUrl})`
     }}>
-      <AddCart />
+      <AddCartButton />
     </div>
     <div className="px-5 py-3">
       <h3 className="text-gray-700 uppercase">{ItemName}</h3>

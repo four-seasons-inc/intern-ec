@@ -2,7 +2,6 @@ import Layout from '../layouts/Layout'
 import HeroCard from "../components/Molecules/HeroCard"
 import ItemCard from "../components/Molecules/ItemCard"
 
-
 const Home = () => (
   <Layout title="Home | Sample e-commerce">
     <div className="container mx-auto px-6">
