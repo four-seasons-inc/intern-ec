@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Cart, Product } from "shopify-buy";
-import Layout from "../../layouts/Layout";
+import Layout from "../../components/Templates/Layout";
 import { client } from "../../lib/shopifyClient"
 
 type DetailProps = {

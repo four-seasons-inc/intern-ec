@@ -1,4 +1,4 @@
-import Layout from '../layouts/Layout'
+import Layout from '../components/Templates/Layout'
 import HeroCard from "../components/Molecules/HeroCard"
 import ItemCard from "../components/Molecules/ItemCard"
 

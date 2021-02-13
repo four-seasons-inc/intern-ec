@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Layout from '../../layouts/Layout'
+import Layout from '../../components/Templates/Layout'
 
 const AboutPage = () => (
   <Layout title="About | Sample e-commerce">
