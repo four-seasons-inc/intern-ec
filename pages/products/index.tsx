@@ -1,7 +1,7 @@
 import { Product } from "shopify-buy"
 import { GetStaticProps } from "next"
 import { client } from "../../lib/shopifyClient"
-import Layout from "../../layouts/Layout"
+import Layout from "../../components/Templates/Layout"
 import Link from "next/link";
 
 type IndexProps = {
