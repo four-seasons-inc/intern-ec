@@ -1,0 +1,11 @@
+{
+  "title": "Sample e-commerce",
+  "titleTemplate": "%s - Sample e-commerce",
+  "description": "This is a sample e-commerce site for interns' curriculum.",
+  "openGraph": {
+    "type": "website",
+    "locale": "ja_JP",
+    "url": "https://github.com/four-seasons-inc/intern-ec",
+    "site_name": "Sample e-commerce"
+  }
+}
