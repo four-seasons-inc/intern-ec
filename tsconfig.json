@@ -18,6 +18,13 @@
     "strict": true,
     "target": "esnext"
   },
+  "paths": {
+    "@lib/*": ["lib/*"],
+    "@config/*": ["config/*"],
+    "@components/*": ["components/*"],
+    "@framework/*": ["framework/shopify/*"],
+    "@framework": ["framework/shopify"]
+  },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]
 }
