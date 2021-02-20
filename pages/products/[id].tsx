@@ -2,8 +2,9 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Cart, Product } from "shopify-buy";
-import Layout from "../../components/Templates/Layout";
-import { client } from "../../lib/shopifyClient"
+import Layout from '@components/Templates/Layout'
+import { client } from "@lib/shopifyClient"
+import { NextSeo } from 'next-seo'
 
 type DetailProps = {
   product?: Product
@@ -28,7 +29,24 @@ const DetailPage = (props: DetailProps) => {
   }, []);
 
   return (
-    <Layout title={`${product.title} | Sample e-commerce`}>
+    <Layout>
+      <NextSeo
+        title={product.title}
+        description={product.description}
+        openGraph={{
+          type: 'website',
+          title: product.title,
+          description: product.description,
+          images: [
+            {
+              url: product.images[0].src,
+              width: 800,
+              height: 600,
+              alt: product.title
+            }
+          ]
+        }}
+      />
       <div>
         <Link href="/products">
           <a href="/products">Back to Product Lists</a>

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "allowJs": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
@@ -16,14 +17,14 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
-  },
-  "paths": {
-    "@lib/*": ["lib/*"],
-    "@config/*": ["config/*"],
-    "@components/*": ["components/*"],
-    "@framework/*": ["framework/shopify/*"],
-    "@framework": ["framework/shopify"]
+    "target": "esnext",
+    "paths": {
+      "@lib/*": ["lib/*"],
+      "@config/*": ["config/*"],
+      "@components/*": ["components/*"],
+      "@framework/*": ["framework/shopify/*"],
+      "@framework": ["framework/shopify"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]

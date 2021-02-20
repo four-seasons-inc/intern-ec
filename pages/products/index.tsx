@@ -1,8 +1,9 @@
 import { Product } from "shopify-buy"
 import { GetStaticProps } from "next"
-import { client } from "../../lib/shopifyClient"
-import Layout from "../../components/Templates/Layout"
-import Link from "next/link";
+import { client } from "@lib/shopifyClient"
+import Layout from "@components/Templates/Layout"
+import Link from "next/link"
+import { NextSeo } from 'next-seo'
 
 type IndexProps = {
   products: Product[];
@@ -10,7 +11,16 @@ type IndexProps = {
 
 const IndexPage: React.FC<IndexProps> = ({ products }) => {
   return (
-    <Layout title="Products | Sample e-commerce">
+    <Layout>
+      <NextSeo
+        title="Products"
+        description="Products description goes hear"
+        openGraph={{
+          type: 'website',
+          title: "Products",
+          description: "Products",
+        }}
+      />
       <div className="flex flex-wrap">
         {
           products.map((product) =>

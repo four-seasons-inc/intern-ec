@@ -2,9 +2,14 @@ import 'tailwindcss/tailwind.css';
 
 import { AppProps } from 'next/app';
 
+import Head from '@components/Organisms/Head.tsx'
+
 function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <Component {...pageProps} />
+    <>
+      <Head />
+      <Component {...pageProps} />
+    </>
   );
 }
 
