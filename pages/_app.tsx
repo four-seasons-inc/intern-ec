@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css';
+import '@assets/main.css'
 
 import { AppProps } from 'next/app';
 
