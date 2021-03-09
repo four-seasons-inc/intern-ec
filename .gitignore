@@ -35,3 +35,6 @@ yarn-error.log*
 
 # next config
 next.config.js
+
+# vscode settings
+.vscode
