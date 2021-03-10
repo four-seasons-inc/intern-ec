@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "./node_modules/.bin/eslint"
+    "lint": "eslint",
+    "format": "prettier --write"
   },
   "dependencies": {
     "@types/shopify-buy": "^2.10.5",
@@ -27,6 +28,7 @@
     "@typescript-eslint/parser": "^4.17.0",
     "eslint": "^7.21.0",
     "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1",
     "typescript": "4.0"
   },
   "license": "MIT"
