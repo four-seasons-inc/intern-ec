@@ -8,7 +8,8 @@ const Head = () => {
       <DefaultSeo {...config} />
       <NextHead>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href="/site.webmanifest" key="site-manifest" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>
+        {/* <link rel="manifest" href="/site.webmanifest" key="site-manifest" /> */}
       </NextHead>
     </>
   )
